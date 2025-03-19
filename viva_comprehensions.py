@@ -59,4 +59,6 @@ def gen_set(val_in: str) -> Set:
     :param val_in:
     :return:
     """
-    pass
+    output = {val_in.upper() for val_in in val_in if val_in.islower()}
+    return output
+
