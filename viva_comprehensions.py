@@ -14,13 +14,16 @@ def gen_list(start: int, stop: int, parity: Parity) -> List[int]:
 
     Based on parity (odd or even), return a list from the start and end arguments.
 
+
+     https://docs.python.org/3/howto/enum.html
+
     :param start:
     :param stop:
     :param parity:
     :return:
     """
 
-    output = [int(num) for num in range (start,stop) if parity is 1 or 0]
+    output = [nums for nums in range (start,stop) if parity == 1 or 0]
     return output
     #pass
 
