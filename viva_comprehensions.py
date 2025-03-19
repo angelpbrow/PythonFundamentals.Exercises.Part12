@@ -20,7 +20,7 @@ def gen_list(start: int, stop: int, parity: Parity) -> List[int]:
     :return:
     """
 
-    output = [int(num) for num in range (start,stop) if parity()]
+    output = [int(num) for num in range (start,stop) if parity is 1 or 0]
     return output
     #pass
 
@@ -41,7 +41,7 @@ def gen_dict(start: int, stop: int, strategy: Callable) -> Dict:
     :param strategy:
     :return:
     """
-    output = { x: strategy(x) for x in range (start, stop)}
+    output = { x: strategy(x) for x in range (start, stop) }
     return output
 
 
